@@ -1,8 +1,10 @@
-message = "SECRET"
+#made by ThePyBeast
+
+message = "SECRET" #the message that is going to be encrytped or decrypted
 def encrypt():
-	global t
-	global key
-	o = []
+	global t #the output
+	global key #the encryption key
+	o = [] #a list to get the characters
 	key = 10000
 	t = ""
 	for letter in message:
@@ -12,7 +14,7 @@ def encrypt():
 			t += chr(i)
 	print(t)
 def decrypt():
-	d = ''
+	d = '' 
 	k = []
 	for letter in t:
 		k.append(ord(letter)-key)
@@ -20,4 +22,4 @@ def decrypt():
 		d += chr(i) 
 	print(d)	
 encrypt()
-#decrypt()
+decrypt()
